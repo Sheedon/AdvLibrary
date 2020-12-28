@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 复写3个主要的色彩. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <!--设置没有Title-->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        // 隐藏状态栏
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AdvFileTheme" parent="LFileTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>
