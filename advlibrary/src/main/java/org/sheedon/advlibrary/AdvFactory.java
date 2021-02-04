@@ -36,12 +36,22 @@ public class AdvFactory {
         executor = Executors.newFixedThreadPool(2);
     }
 
+    /**
+     * initialize adv type
+     *
+     * @param advType advertising type
+     */
     public static void init(@IntRange(from = Constant.TYPE_ADV_IMAGE, to = Constant.TYPE_ADV_WEB)
                                     int advType) {
         instance.advType = advType;
     }
 
 
+    /**
+     * download source model (include images、video、webPath)
+     *
+     * @param model source model
+     */
     public static void download(SourceModel model) {
         SourceDispatcher.getInstance().dispatch(model);
     }
@@ -65,7 +75,7 @@ public class AdvFactory {
         SourceDispatcher.getInstance().updateAdv(model);
     }
 
-    public static SourceCenter getSourceCenter(){
+    public static SourceCenter getSourceCenter() {
         return SourceDispatcher.getInstance();
     }
 }

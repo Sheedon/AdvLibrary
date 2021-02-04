@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         sourceModel.setImagePaths(new String[]{"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1603365312,3218205429&fm=26&gp=0.jpg"});
         AdvFactory.download(sourceModel);
 
+        // 绑定和配置广告内容
         AdvModel model = new AdvModel();
         model.setImagePath("/storage/emulated/0/DCIM");
         mAdvParent.initConfig(model);
